@@ -2,34 +2,21 @@
 target/
 *.class
 
-# Log files
+# Logs
 *.log
 
-# Database Configuration
-# application.properties
-
-### IntelliJ IDEA ###
+# IntelliJ
 .idea/
-*.iws
 *.iml
-*.ipr
 out/
 
-### VS Code ###
+# VS Code
 .vscode/
-bin/
-*.code-workspace
 
-### Maven ###
-.mvn/
-mvnw
-mvnw.cmd
-.mvn/wrapper/maven-wrapper.jar
-
-### Operating System ###
-Detailed .DS_Store
+# OS files
+.DS_Store
 Thumbs.db
 
-### Frontend###
+# Node
 node_modules/
 .eslintcache
