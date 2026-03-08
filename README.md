@@ -1,6 +1,6 @@
 # Smart Job Application Tracker
 
-![Dashboard](smart-job-tracker/src/main/resources/images/dashboard.png)
+![Dashboard](src/main/resources/images/dashboard.png)
 
 ## Overview
 The Smart Job Application Tracker is a full-stack application designed to help developers organize their job search. It features a stateless REST API built with Java 25 and Spring Boot, utilizing JWT for secure authentication. The frontend is a responsive single-page application built with Vanilla JavaScript and CSS.
