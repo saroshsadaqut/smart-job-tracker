@@ -1,15 +1,12 @@
-# Compiled Java classes and JARs
+# Compiled Java classes
 target/
 *.class
-*.jar
-*.war
-*.ear
 
 # Log files
 *.log
 
 # Database Configuration
-# src/main/resources/application.properties
+# application.properties
 
 ### IntelliJ IDEA ###
 .idea/
@@ -30,9 +27,9 @@ mvnw.cmd
 .mvn/wrapper/maven-wrapper.jar
 
 ### Operating System ###
-.DS_Store
+Detailed .DS_Store
 Thumbs.db
 
-### Frontend/Static Assets ###
+### Frontend###
 node_modules/
 .eslintcache

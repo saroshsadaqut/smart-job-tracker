@@ -50,12 +50,14 @@ async function fetchApplications() {
     const res = await fetchWithAuth(`${API_BASE_URL}/applications`);
     if (res.status === 403) return document.getElementById('logout-btn').click();
     const apps = await res.json();
-    // Inside fetchApplications() mapping
+
     tableBody.innerHTML = apps.map(app => `
         <tr>
             <td>${app.company}</td>
             <td>${app.role}</td>
-            <td>${app.location || 'N/A'}</td>      <td>${app.packageAmount || 'N/A'}</td> <td>${app.appliedDate}</td>
+            <td>${app.location || 'N/A'}</td>
+            <td>${app.packageAmount || 'N/A'}</td>
+            <td>${app.appliedDate}</td>
             <td>
                 <select onchange="updateStatus(${app.id}, this.value)">
                     <option value="APPLIED" ${app.status==='APPLIED'?'selected':''}>Applied</option>
