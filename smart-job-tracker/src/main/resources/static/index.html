@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Job Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="login-container">
+    <h2>Job Tracker Login</h2>
+    <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <button type="button" id="register-btn" style="background-color: #27ae60;">Register</button>
+    </form>
+    <p id="login-error" style="color: red; display: none; margin-top:10px;">Error with credentials</p>
+</div>
+
+<div id="dashboard-container" style="display: none;">
+    <div class="header">
+        <h2>My Applications</h2>
+        <button id="logout-btn">Logout</button>
+    </div>
+
+    <form id="add-app-form">
+        <input type="text" id="company" placeholder="Company" required>
+        <input type="text" id="role" placeholder="Role" required>
+        <input type="text" id="location" placeholder="Location">
+        <input type="text" id="packageAmt" placeholder="Package (e.g., 15 LPA)">
+        <input type="date" id="appliedDate" required>
+        <button type="submit">Add Job</button>
+    </form>
+
+    <table id="applications-table">
+        <thead>
+        <tr>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Location</th> <th>Package</th>  <th>Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+# Compiled Java classes and JARs
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# Database Configuration
+# src/main/resources/application.properties
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### VS Code ###
+.vscode/
+bin/
+*.code-workspace
+
+### Maven ###
+.mvn/
+mvnw
+mvnw.cmd
+.mvn/wrapper/maven-wrapper.jar
+
+### Operating System ###
+.DS_Store
+Thumbs.db
+
+### Frontend/Static Assets ###
+node_modules/
+.eslintcache
